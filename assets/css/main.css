@@ -2,31 +2,85 @@
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
+.open_sans_regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.open_sans_bold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.center_title {
+    text-align: center;
+}
+
 .glow {
-  color: #fff;
-  animation: glow 1s ease-in-out infinite alternate;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: rgb(135, 5, 18);
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    border: none;
+    color: black;
+    padding: 16px 16px;
+    border-radius: 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    height: 20px;
 }
 
 @-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 20px #22b6f1, 0 0 30px #22b6f1, 0 0 40px #22b6f1, 0 0 50px #22b6f1;
-  }
-  
-  to {
-    text-shadow: 0 0 30px #0d7289, 0 0 40px #0d7289, 0 0 50px #0d7289, 0 0 60px #0d7289;
-  }
+    from {
+        text-shadow: 0 0 20px #22b6f1, 0 0 30px #22b6f1, 0 0 40px #22b6f1, 0 0 50px #22b6f1;
+    }
+
+    to {
+        text-shadow: 0 0 30px #0d7289, 0 0 40px #0d7289, 0 0 50px #0d7289, 0 0 60px #0d7289;
+    }
 }
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
 
 ::-moz-selection {
@@ -68,7 +122,6 @@
 
 body {
     color: #fff;
-    font-family: poppins, sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
@@ -143,9 +196,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: poppins, sans-serif;
     color: #ffff;
-    line-height: 1.2em!important;
+    line-height: 1.2em !important;
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 600
@@ -159,7 +211,6 @@ h6 {
 .h6 {
     margin-bottom: 0;
     margin-top: 0;
-    font-family: poppins, sans-serif;
     font-weight: 600;
     color: #ffff
 }
@@ -243,7 +294,7 @@ th {
 }
 
 .fz-48 {
-    font-size: 48px!important
+    font-size: 48px !important
 }
 
 .fw100 {
@@ -255,7 +306,7 @@ th {
 }
 
 .fw400 {
-    font-weight: 400!important
+    font-weight: 400 !important
 }
 
 .fw500 {
@@ -327,11 +378,11 @@ th {
 }
 
 .ml-0 {
-    margin-left: 0!important
+    margin-left: 0 !important
 }
 
 .ml-5 {
-    margin-left: 5px!important
+    margin-left: 5px !important
 }
 
 .ml-10 {
@@ -355,11 +406,11 @@ th {
 }
 
 .mr-0 {
-    margin-right: 0!important
+    margin-right: 0 !important
 }
 
 .mr-5 {
-    margin-right: 5px!important
+    margin-right: 5px !important
 }
 
 .mr-15 {
@@ -387,7 +438,7 @@ th {
 }
 
 .mb-0-i {
-    margin-bottom: 0!important
+    margin-bottom: 0 !important
 }
 
 .mb-5 {
@@ -790,7 +841,7 @@ th {
 
 @media(max-width:767px) {
     .no-flex-xs {
-        display: block!important
+        display: block !important
     }
 }
 
@@ -1318,9 +1369,9 @@ h6 {
 
 .single-gallery-image {
     margin-top: 30px;
-    background-repeat: no-repeat!important;
-    background-position: center center!important;
-    background-size: cover!important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
     height: 200px;
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
@@ -1340,7 +1391,7 @@ h6 {
 .unordered-list li {
     position: relative;
     padding-left: 30px;
-    line-height: 1.82em!important
+    line-height: 1.82em !important
 }
 
 .unordered-list li:before {
@@ -1363,7 +1414,7 @@ h6 {
     list-style-type: decimal-leading-zero;
     color: #8490ff;
     font-weight: 500;
-    line-height: 1.82em!important
+    line-height: 1.82em !important
 }
 
 .ordered-list li span {
@@ -1376,7 +1427,7 @@ h6 {
     list-style-type: lower-alpha;
     color: #8490ff;
     font-weight: 500;
-    line-height: 1.82em!important
+    line-height: 1.82em !important
 }
 
 .ordered-list-alpha li span {
@@ -1389,7 +1440,7 @@ h6 {
     list-style-type: lower-roman;
     color: #8490ff;
     font-weight: 500;
-    line-height: 1.82em!important
+    line-height: 1.82em !important
 }
 
 .ordered-list-roman li span {
@@ -1989,7 +2040,7 @@ h6 {
     border: none;
     border-radius: 0;
     height: 40px;
-    background: #fff!important;
+    background: #fff !important;
     padding-left: 45px;
     padding-right: 40px;
     width: 100%
@@ -2068,7 +2119,7 @@ h6 {
 .nav-menu li:hover>a,
 .menu-active,
 .parent-active>.sf-with-ul {
-    color: #8490ff!important
+    color: #8490ff !important
 }
 
 .nav-menu,
@@ -2203,6 +2254,7 @@ h6 {
     #mobile-nav-toggle {
         display: inline
     }
+
     #nav-menu-container {
         display: none
     }
@@ -2314,17 +2366,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .brands-area,
 .about-banner,
 .sb_bar {
-    background: -moz-linear-gradient(0deg, #000000 0%, #E9333C 100%);
-    background: -webkit-linear-gradient(0deg, #000000 0%, #E9333C 100%);
-    background: -ms-linear-gradient(0deg, #000000 0%, #E9333C 100%);
+    background: -moz-linear-gradient(0deg, #000000 0%,  rgb(135, 5, 18) 100%);
+    background: -webkit-linear-gradient(0deg, #000000 0%, rgb(135, 5, 18) 100%);
+    background: -ms-linear-gradient(0deg, #000000 0%, rgb(135, 5, 18) 100%);
     border-radius: 20px;
 }
 
 .p1-gradient-color,
 .single-services:hover .lnr {
-    background: -moz-linear-gradient(0deg, #000000 0%, #E9333C 100%);
-    background: -webkit-linear-gradient(0deg, #000000 0%, #E9333C 100%);
-    background: -ms-linear-gradient(0deg, #000000 0%, #E9333C 100%);
+    background: -moz-linear-gradient(0deg, #000000 0%, indigo 100%);
+    background: -webkit-linear-gradient(0deg, #000000 0%, indigo 100%);
+    background: -ms-linear-gradient(0deg, #000000 0%, indigo 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
@@ -2402,7 +2454,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn.squire {
-    border-radius: 0!important;
+    border-radius: 0 !important;
     border: 1px solid transparent
 }
 
@@ -2437,7 +2489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area .fullscreen {
-    height: 750px!important
+    height: 750px !important
 }
 
 .banner-left h6 {
@@ -2474,7 +2526,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media(max-width:991px) {
     .banner-right {
-        align-self: center!important
+        align-self: center !important
     }
 }
 
@@ -2726,6 +2778,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         left: 0;
         top: 20px
     }
+
     .testimonial-area .owl-controls .owl-prev,
     .testimonial-area .owl-controls .owl-next {
         display: inline-block
@@ -2985,7 +3038,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .brands-area .brand-wrap .owl-carousel .owl-item img {
-    width: auto!important
+    width: auto !important
 }
 
 .brands-area .brand-wrap .single-brand {
@@ -3045,7 +3098,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .aboutpage-feedback-area {
-    background: #f9f9ff!important
+    background: #f9f9ff !important
 }
 
 .single-skill p {
@@ -3055,13 +3108,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .sb_progress {
-    height: 14px!important;
+    height: 14px !important;
     border-radius: 12px;
     border: 3px solid #eee
 }
 
 .sb_bar {
-    height: 8px!important;
+    height: 8px !important;
     border-radius: 12px
 }
 
@@ -3099,7 +3152,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .timeline ul li .content {
-    background-color: #000!important;
+    background-color: #000 !important;
     box-shadow: 0 10px 27px 3px rgba(204, 204, 204, .2);
     position: relative;
     top: 7px;
@@ -3141,6 +3194,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .timeline ul li .content {
         width: 41vw
     }
+
     .timeline ul li:nth-child(even) .content {
         left: calc(-41vw - 45px)
     }
@@ -3150,15 +3204,19 @@ body.mobile-nav-active #mobile-nav-toggle {
     .timeline ul li {
         margin-left: 20px
     }
+
     .timeline ul li .content {
         width: calc(100vw - 100px)
     }
+
     .timeline ul li .content h2 {
         text-align: initial
     }
+
     .timeline ul li:nth-child(even) .content {
         left: 45px
     }
+
     .timeline ul li:nth-child(even) .content:before {
         left: -33px
     }
@@ -3312,7 +3370,7 @@ dl.accordion.time-line:before {
 
 .accordion.time-line>dt>a:hover,
 .accordion.time-line>dt>a.active {
-    background: 0 0!important
+    background: 0 0 !important
 }
 
 .blog-home-banner {
@@ -3508,18 +3566,18 @@ dl.accordion.time-line:before {
 }
 
 .post-content-area .single-post .primary-btn {
-    background: #fff!important;
-    color: #ffff!important;
+    background: #fff !important;
+    color: #ffff !important;
     -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
-    border-radius: 0!important
+    border-radius: 0 !important
 }
 
 .post-content-area .single-post .primary-btn:hover {
-    background: #8490ff!important;
-    color: #fff!important
+    background: #8490ff !important;
+    color: #fff !important
 }
 
 .posts-list .posts-title h3 {
@@ -3809,8 +3867,8 @@ dl.accordion.time-line:before {
 }
 
 .widget-wrap .newsletter-widget .form-control {
-    border-left: none!important;
-    border-right: none!important;
+    border-left: none !important;
+    border-right: none !important;
     border-radius: 0;
     font-size: 13px;
     color: #ccc;
@@ -3886,7 +3944,7 @@ dl.accordion.time-line:before {
 }
 
 .single-post-area .meta-details {
-    margin-top: 20px!important
+    margin-top: 20px !important
 }
 
 .single-post-area .social-links li {
@@ -4049,9 +4107,11 @@ dl.accordion.time-line:before {
     .comments-area .comment-list .single-comment h5 {
         font-size: 12px
     }
+
     .comments-area .comment-list .single-comment .date {
         font-size: 11px
     }
+
     .comments-area .comment-list .single-comment .comment {
         font-size: 10px
     }
@@ -4157,7 +4217,7 @@ dl.accordion.time-line:before {
 }
 
 .comment-form .primary-btn {
-    border-radius: 0!important;
+    border-radius: 0 !important;
     border: 1px solid transparent;
     color: #fff;
     font-weight: 600
@@ -4165,8 +4225,8 @@ dl.accordion.time-line:before {
 
 .comment-form .primary-btn:hover {
     background: 0 0;
-    border-color: #8490ff!important;
-    color: #8490ff!important
+    border-color: #8490ff !important;
+    color: #8490ff !important
 }
 
 .contact-page-area {
@@ -4197,8 +4257,8 @@ dl.accordion.time-line:before {
 }
 
 .contact-page-area .form-area .form-control:focus {
-    box-shadow: none!important;
-    border-color: #ced4da!important
+    box-shadow: none !important;
+    border-color: #ced4da !important
 }
 
 .contact-page-area .form-area input {
@@ -4208,7 +4268,7 @@ dl.accordion.time-line:before {
 .contact-page-area .form-area input,
 .contact-page-area .form-area textarea {
     border-radius: 0;
-    font-size: 13px!important
+    font-size: 13px !important
 }
 
 .contact-page-area .form-area textarea {
@@ -4222,14 +4282,14 @@ dl.accordion.time-line:before {
     -moz-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
-    border-radius: 0!important;
+    border-radius: 0 !important;
     font-size: 14px;
-    text-transform: uppercase!important
+    text-transform: uppercase !important
 }
 
 .contact-page-area .form-area .genric-btn:hover {
     border: 1px solid #8490ff;
-    color: #8490ff!important
+    color: #8490ff !important
 }
 
 @media(max-width:991px) {
@@ -4260,20 +4320,20 @@ dl.accordion.time-line:before {
 }
 
 .single-footer-widget h4 {
-    color: #fff!important;
+    color: #fff !important;
     margin-bottom: 25px;
     font-weight: 500
 }
 
 .single-footer-widget .form-control {
     border: none;
-    width: 80%!important;
+    width: 80% !important;
     font-weight: 300;
     background: #f9f9ff;
     padding-left: 20px;
     border-radius: 0;
     font-size: 14px;
-    line-height: normal!important;
+    line-height: normal !important;
     color: #ffff
 }
 
@@ -4335,12 +4395,12 @@ dl.accordion.time-line:before {
 }
 
 .single-footer-widget ::-moz-selection {
-    background-color: #191919!important;
+    background-color: #191919 !important;
     color: #777
 }
 
 .single-footer-widget ::selection {
-    background-color: #191919!important;
+    background-color: #191919 !important;
     color: #777
 }
 
@@ -4426,13 +4486,13 @@ dl.accordion.time-line:before {
     height: 0;
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.027);
     border-radius: 10px;
     display: none;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #dfdfdf;
     border-radius: 0;
     cursor: s-resize;
@@ -4479,6 +4539,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
         grid-gap: 2rem;
     }
+
     .gallery,
     .gallery-item {
         margin: 0;
